@@ -1,6 +1,6 @@
 
 # make network
-first, you have to make network for nexus service. 
+first, you have to make network for nexus service. (if you not use docker swarm, pass!) 
 ```
 docker network create --driver overlay nexus-network
 ```
