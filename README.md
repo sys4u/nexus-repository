@@ -13,3 +13,5 @@ What is important here is that you have to bind volume to nexus service. I used 
 docker service create --name nexus --network nexus-network --mount type=bind,src=/gluster-mount/nexus-data,dst=/nexus-data  -p 8081:8081 -p 12000:12000 sonatype/nexus3:latest
 
 ```
+nexus web port is 8081.
+if you add repository, you have to open port when creating service. (so I opened extra 12000 port)
