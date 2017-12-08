@@ -14,4 +14,5 @@ docker service create --name nexus --network nexus-network --mount type=bind,src
 
 ```
 nexus web port is 8081.
-if you add repository, you have to open port when creating service. (so I opened extra 12000,13000 port)
+if you add repository, you have to open port when creating service. 
+(so I opened extra 12000,13000 port - 12000:repository group, 13000:repository host)
